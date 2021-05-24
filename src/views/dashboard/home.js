@@ -20,10 +20,17 @@ export default function Home() {
         }
     }
 
+    function handleUpdate() {
+
+        history.push('/update-profile')
+    }
+
     return (
         <div>
 
             <strong>Email: </strong>{currentUser.email}
+
+            <Button onClick={handleUpdate}> Update Profile </Button>
 
             <Button onClick={handleLogout}> Log Out </Button>
 
